@@ -1,0 +1,108 @@
+
+body {
+    font-family: "Arial", Serif;
+    background-color: #f4f4f4;
+}
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    height: 56px;
+    z-index: 1;
+    /* overflow: hidden; */
+    
+}
+
+.toolbar-logo {
+    color: yellow;
+    /* background-color: white; */
+}
+
+
+
+ 
+.toolbar-navigation {
+    display: flex;
+    height: 100%;
+    margin: 0 0 0 0;
+    align-items: center; 
+}
+
+.toolbar-navigation ul {
+    list-style: none;
+    margin: 0 ;
+    padding: 0 ;
+    display: flex;
+}
+
+.toolbar-navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.toolbar-navigation-items ul {
+    color: white;
+    text-decoration: none;
+    /* padding: 60%; */
+}
+
+.toolbar-navigation-items ul :hover {
+    color: #000;
+    background-color: #ddd;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top:0 ;
+    left: 0 ;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color:#ccc;
+    display:block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover{
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+    margin: 100px 0 0 0 ;
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow:hidden;
+    width:100%;
+}
+
+

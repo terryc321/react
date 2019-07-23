@@ -1,0 +1,118 @@
+
+
+FAILS.TXT
+
+1. Less Code
+2. Cleaner Code
+3. 
+
+
+log of things tried in REACT javascript , but it didnt like.
+
+
+	    <!--
+		<div id="my-div">
+		<a href="#" class="fill-div" onClick={this.hello}>{this.props.no}</a>
+		</div>
+		!-->
+
+  <input type="text" name="celsius" 
+onChange={hello}
+function(val){alert("value changed " + val); this.hello(val) ;}  } />
+function(){alert("value changed " + this.target.value); } } 
+
+
+	//console.log("onSquareChange " + no);
+
+	//console.log("onSquareChange " + no);
+	//this.setState({ temperature : 44 });
+
+
+
+class TemperatureFahrenheit extends React.Component {
+    constructor(props) {
+	super(props); // always
+
+	// This binding is necessary to make `this` work in the callback
+	this.hello = this.hello.bind(this);
+    }
+
+    hello(e){
+	// this.props.no
+	//this.props.onTempChangeFahrenheit(32);
+	//alert("you changed my temperature - fahrenheit " + e);
+	console.log("temp changed : fahrenheit " + e );
+    }
+    
+    render(){
+	//return (<button onClick={this.hello}>Square {this.props.no} {this.props.mark} </button>);
+	//return (<button onClick={this.hello} className={styles.square}>  {this.props.mark} </button>);
+	return (
+		<div>
+		<br/>
+		fahrenheit:
+		<input type="text" name="fahrenheit" onChange={this.hello(5)} />
+		</div>
+	);
+	
+    }
+}
+
+
+
+    /* leading minus sign followed by digit 
+ minus sign by itself gives Naan bread
+    */
+    simplify(r){
+	if (r == "NaN"){
+	    return "0";
+	}
+	let str = r.replace(/\D/g,'');
+	return str === "-" ? "-0" : str;
+    }
+    
+
+
+/*
+#my-div {
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 200px;
+    text-align: center;
+    margin: none;
+}
+*/
+
+<div onclick="myFunction( event );"><span>shanghai</span><span>male</span></div>
+
+
+/*
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+*/
+
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto ; 
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
